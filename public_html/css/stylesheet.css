@@ -1,0 +1,136 @@
+/* Cores do tema
+
+cor 		rgb				hex
+
+azul		47 45 118		2F2D76
+verde		102	182 69		66B645
+cinza		202 207 199		CACFC7
+
+*/
+
+/* Removendo espaçamentos e padronizando bordas */
+*{  
+  padding:0;
+  margin:0;
+  border-width: 1px;
+}
+
+/* oculta barra de rolagem */
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Definindo plano de fundo da página */
+body{
+	background-color:;
+}
+
+/* Definindo fontes personalizadas */
+@font-face
+{
+font-family:digital;
+src: url(fonts/DS-DIGII.ttf);
+}
+
+@font-face
+{
+font-family: contm;
+src: url(fonts/contm.ttf);
+}
+
+@font-face
+{
+font-family:Cocogoose;
+src: url(fonts/Cocogoose.otf);
+}
+
+		
+/* Estilo do Menu */
+#menu{
+	position: absolute;
+	height: 28%;
+	width: 100%;
+	opacity: 0.8;
+	background-color: #373178;
+	font-family: contm;
+	font-size: 120%;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+			
+			span{
+				font-family: billabong;
+			}
+
+			#menu ul{
+		    top: 80%;
+		    left: 55%;
+		    width: 35%;
+		    position: relative;
+		    height: auto;
+		    text-align: center;
+			}
+
+			#menu li{
+				display: inline;
+				padding: 2%;
+
+			}
+
+			#menu a {
+			    text-decoration: none;
+			}
+
+			#menu a:hover {
+			    color: #66B645; 
+			}
+
+
+			/* Estilo da logo no topo do site */
+
+			#menu .logo{
+				position: absolute;
+				top: 5%;
+				left: 10%;
+				height: 90%;
+				width: 40%;
+				float: left;
+			}
+
+			/* Estilo da transição menu-content */
+
+			.transition{
+				position: absolute;
+				top: 28%;
+				height: 6%;
+				width: 100%;
+				z-index: 1;
+			}
+
+	
+/* Fonte do contador */	
+#contador{
+	left: 15%;
+	font-family: digital;
+	position: absolute;
+	height: auto;
+	width: 10$;
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	font-size: 150%;
+	color: #2F2D76;
+	font-weight: bold;
+}
+
+/* Estilo do Iframe que exibe o conteúdo */
+iframe{
+	position: absolute;
+	top: 30%;
+	height: 72%;
+	width: 100%;
+	opacity: 0.8;
+	border-style: none;
+	background-color: #1B1656;
+}
