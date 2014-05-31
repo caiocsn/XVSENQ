@@ -12,7 +12,7 @@ cinza		202 207 199		CACFC7
 *{  
     padding:0;
     margin:0;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 /* oculta barra de rolagem */
@@ -49,7 +49,6 @@ cinza		202 207 199		CACFC7
     background-color: #F2F2F2;
     font-family: contm;
     font-size: 90%;
-    color: #000000;
     border-bottom-style: solid;
 }
 
@@ -71,6 +70,10 @@ cinza		202 207 199		CACFC7
 
 #menu a {
     text-decoration: none;
+}
+
+#menu .nav{
+    color: #787878;
 }
 
 #menu .nav:hover {
@@ -116,13 +119,14 @@ cinza		202 207 199		CACFC7
     top: 8%;
     height: 92%;
     width: 100%;
-    background-color: #FFFFFF;
+    background-image: url('../images/fundo_senq.jpg');
+    background-size: 100% 100%;
 }
 
 #content-frame{
     top: 20%;
-    left: 20%;
-    width: 60%;
+    left: 10%;
+    width: 80%;
     height: 60%;
     position: relative;
     opacity: 0.9;
@@ -131,6 +135,7 @@ cinza		202 207 199		CACFC7
 /* Estilo dos containers de conteudo */
 
 .content-box{
+    color: #787878;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -153,7 +158,9 @@ cinza		202 207 199		CACFC7
     position: relative;
     text-align: center;
     font-family: kgempireofdirt;
-    font-size: 200%;
+    font-size: 250%;
+    left: 15%;
+    width: 70%;
 }
 
 .content-box .text{
@@ -163,15 +170,18 @@ cinza		202 207 199		CACFC7
     width: 80%;
     height: auto;
     font-family: contm;
-    font-size: 90%;
+    font-size: 80%;
     text-align: justify;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    padding: 1%;
 }
 
 .content-box img{
     position: relative;
-    top: 15%;
+    top: 5%;
     width: 100%;
-    height: 70%;
+    height: 90%;
 }
 
 .content-box iframe{
@@ -195,7 +205,7 @@ cinza		202 207 199		CACFC7
 .btn-contato-enviar, .btn-contato-reset{
     min-width: 15%;
     padding: 3%;
-    font-family: kgempireofdirt;
+    font-family: contm;
     font-size: 100%;
 }
 
