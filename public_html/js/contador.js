@@ -1,8 +1,8 @@
 var YY = 2014;
 var MM = 08;
 var DD = 18;
-var HH = 15;
-var MI = 20;
+var HH = 08;
+var MI = 00;
 var SS = 00; 
 
 function atualizaContador() {
@@ -20,20 +20,20 @@ function atualizaContador() {
   // Ajustando para que a diferença entre datas seja exibida na forma correta
   ss = ss - (mm * 60);
   mm = mm - (hh * 60);
-  //hh = hh - (dd * 24); 
+  hh = hh - (dd * 24); 
 
   // Texto a ser impresso
   var faltam = '';
  
-   
+    faltam += dd + ' : ';
     if(hh < 10)
-      faltam += "0" + hh + ':';
-    else faltam += hh + ':';
+      faltam += "0" + hh + ' : ';
+    else faltam += hh + ' : ';
 
     if(mm < 10)
-      faltam += "0" + mm + ':';
+      faltam += "0" + mm + ' : ';
     else
-      faltam += mm + ':';
+      faltam += mm + ' : ';
     
     if(ss < 10)
       faltam += "0" + ss;

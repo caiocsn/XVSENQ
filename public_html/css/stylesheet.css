@@ -41,15 +41,108 @@ cinza		202 207 199		CACFC7
     src: url(fonts/contm.ttf);
 }
 
+/* Definição de animações da página */
+
+@-webkit-keyframes fade{
+    0% { opacity: 0.9;}
+    50% {opacity: 0.4;}
+    100% {opacity: 0.9;}
+}
+
+@keyframes fade{
+    0% { opacity: 0.9;}
+    50% {opacity: 0.4;}
+    100% {opacity: 0.9;}
+}
+
+@-webkit-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 1300px 0; }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+        to { background-position: 1300px 0; }
+}
+
+/* Estilo da Página Home */
+#home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgrand.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    -webkit-animation: animatedBackground 40s infinite linear;
+    animation: animatedBackground 40s infinite linear;
+}
+
+#home .logo {
+    top: 10%;
+    position: fixed;
+    left: 35%;
+    height: 60%;
+    width: 30%;
+}
+
+#home .facebook {
+    top: 93%;
+    position: fixed;
+    left: 2%;
+    height: 6%;
+    width: 3%;
+    opacity: 0.5;
+}
+
+#home .facebook:hover{
+    opacity: 1;
+}
+#home .title{
+    position: fixed;
+    width: 98%;
+    text-align: right;
+    height: auto;
+    top: 2%;
+    font-family: kgempireofdirt;
+    font-size: 150%;
+}
+
+#home .logo-icone{
+    top: 95%;
+    position: fixed;
+    left: 90%;
+    height: 4%;
+    width: 8%;
+    opacity: 0.3;
+}
+
+#home .logo-icone:hover{
+    opacity: 1;
+}
+#contador{
+    top: 70%;
+    font-family: digital;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 300%;
+    color: #2F2D76;
+    font-weight: bold;
+    text-align: center;
+    -webkit-animation: fade 1s infinite;
+    animation: fade 1s infinite;
+}
 /* Estilo do Menu */
 #menu{
     position: absolute;
     height: 8%;
     width: 100%;
     background-color: #F2F2F2;
-    font-family: contm;
-    font-size: 90%;
-    border-bottom-style: solid;
+    font-family: kgempireofdirt;
+    font-size: 120%;
+    opacity: 0.6;
+    z-index: 1;
 }
 
 /* Estilo da lista com os links no menu */
@@ -66,6 +159,7 @@ cinza		202 207 199		CACFC7
     padding-left: 2%;
     padding-right: 2%;
     border-left-style: solid;
+    border-color: #787878;
 }
 
 #menu a {
@@ -99,34 +193,19 @@ cinza		202 207 199		CACFC7
     height: 100%;
     width: 100%;
 }
-/* Fonte do contador */	
-#contador{
-    left: 15%;
-    font-family: digital;
-    position: absolute;
-    height: auto;
-    width: 10%;
-    background-color: #FFFFFF;
-    opacity: 0.8;
-    font-size: 150%;
-    color: #2F2D76;
-    font-weight: bold;
-}
-
 /* Estilo do container que exibe o conteúdo */
 .content{
     position: absolute;
-    top: 8%;
-    height: 92%;
+    height: 100%;
     width: 100%;
-    background-image: url('../images/fundo_senq.jpg');
+    background-image: url('../images/backgrand.jpg');
     background-size: 100% 100%;
 }
 
 #content-frame{
     top: 20%;
-    left: 10%;
-    width: 80%;
+    left: 25%;
+    width: 50%;
     height: 60%;
     position: relative;
     opacity: 0.9;
@@ -139,6 +218,8 @@ cinza		202 207 199		CACFC7
     position: absolute;
     width: 100%;
     height: 100%;
+    background-color: #F2F2F2;
+    opacity: 0.7;
 }
 
 .content-box #left-box{
@@ -172,8 +253,6 @@ cinza		202 207 199		CACFC7
     font-family: contm;
     font-size: 80%;
     text-align: justify;
-    border-bottom-style: solid;
-    border-top-style: solid;
     padding: 1%;
 }
 
@@ -218,6 +297,7 @@ cinza		202 207 199		CACFC7
 .formulario textarea, .formulario input{
     position: relative;
     max-width: 90%;
+    border: none;
 }
 
 /** Adequação de estilo para resoluções menores **/
