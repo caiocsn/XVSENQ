@@ -12,7 +12,8 @@ cinza		202 207 199		CACFC7
 *{  
     padding:0;
     margin:0;
-    border-width: 1px;
+    border-color: #66B645;
+    border-width: 5px;
 }
 
 /* oculta barra de rolagem */
@@ -44,15 +45,15 @@ cinza		202 207 199		CACFC7
 /* Definição de animações da página */
 
 @-webkit-keyframes fade{
-    0% { opacity: 0.9;}
-    50% {opacity: 0.4;}
-    100% {opacity: 0.9;}
+    0% { opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
 }
 
 @keyframes fade{
-    0% { opacity: 0.9;}
-    50% {opacity: 0.4;}
-    100% {opacity: 0.9;}
+    0% { opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
 }
 
 @-webkit-keyframes animatedBackground {
@@ -78,23 +79,19 @@ cinza		202 207 199		CACFC7
 }
 
 #home .logo {
-    top: 10%;
+    top: 3%;
     position: fixed;
     left: 35%;
     height: 60%;
     width: 30%;
 }
 
-#home .facebook {
-    top: 93%;
-    position: fixed;
-    left: 2%;
-    height: 6%;
-    width: 3%;
-    opacity: 0.5;
+#home .facebook, #home .gplus{
+    height: 60px;
+    opacity: 0.8;
 }
 
-#home .facebook:hover{
+#home .facebook:hover, #home .gplus:hover{
     opacity: 1;
 }
 #home .title{
@@ -107,6 +104,16 @@ cinza		202 207 199		CACFC7
     font-size: 150%;
 }
 
+#home .text{
+    position: fixed;
+    top: 70%;
+    font-family: kgempireofdirt;
+    width: 100%;
+    height: auto;
+    font-size: 150%;
+    text-align: center;
+    color: #000000;
+}
 #home .logo-icone{
     top: 95%;
     position: fixed;
@@ -120,29 +127,41 @@ cinza		202 207 199		CACFC7
     opacity: 1;
 }
 #contador{
-    top: 70%;
+    top: 77%;
     font-family: digital;
     position: absolute;
-    height: auto;
     width: 100%;
-    opacity: 0.9;
-    font-size: 300%;
-    color: #2F2D76;
+    font-size: 200%;
+    color: #000000;
     font-weight: bold;
     text-align: center;
+}
+
+#contador table{
+    left: 36%;
+    position: absolute;
+    width: 28%;
+}
+#contador .digits{
     -webkit-animation: fade 1s infinite;
     animation: fade 1s infinite;
 }
+#contador .label{
+    font-family: kgempireofdirt;
+    font-size: 50%;
+}
+
 /* Estilo do Menu */
 #menu{
     position: absolute;
     height: 8%;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     font-family: kgempireofdirt;
     font-size: 120%;
     opacity: 0.6;
     z-index: 1;
+    border-bottom-style: solid;
 }
 
 /* Estilo da lista com os links no menu */
@@ -158,8 +177,6 @@ cinza		202 207 199		CACFC7
     display: inline;
     padding-left: 2%;
     padding-right: 2%;
-    border-left-style: solid;
-    border-color: #787878;
 }
 
 #menu a {
@@ -178,21 +195,14 @@ cinza		202 207 199		CACFC7
 
 /* Estilo da logo no topo do site */
 
-.logo{
-    position: relative;
-    top: 10%;
+.logo-senq{
+    position: fixed;
     left: 5%;
-    height: 80%;
-    width: 12%;
-    float: left;
-    text-align: center;
+    height: 18%;
+    width: 9%;
+    z-index: 2;
 }
 
-.logo img{
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
 /* Estilo do container que exibe o conteúdo */
 .content{
     position: absolute;
@@ -206,9 +216,8 @@ cinza		202 207 199		CACFC7
     top: 20%;
     left: 25%;
     width: 50%;
-    height: 60%;
+    height: 70%;
     position: relative;
-    opacity: 0.9;
     border-style: none;
 }
 /* Estilo dos containers de conteudo */
@@ -218,7 +227,7 @@ cinza		202 207 199		CACFC7
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     opacity: 0.7;
 }
 
@@ -302,6 +311,16 @@ cinza		202 207 199		CACFC7
 
 /** Adequação de estilo para resoluções menores **/
 
+/* Telas com até 768 px de largura */
+@media screen and (max-width: 768px){
+/* Estilo do contador */
+#contador table{
+    left: 25%;
+    position: absolute;
+    width: 50%;
+}
+}
+
 /* Telas com até 320 px de largura */
 @media screen and (max-width: 320px){
 /* Estilo do menu*/
@@ -314,6 +333,11 @@ cinza		202 207 199		CACFC7
     font-size: 40%;
 }
 
+/* Estilo do contador */
+#contador table{
+    left: 10%;
+    position: absolute;
+    width: 80%;
 }
-
+}
 

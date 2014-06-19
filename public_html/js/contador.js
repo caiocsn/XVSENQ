@@ -24,26 +24,36 @@ function atualizaContador() {
 
   // Texto a ser impresso
   var faltam = '';
+  var d = '';
+  var h = '';
+  var m = '';
+  var s = '';
  
-    faltam += dd + ' : ';
+    d += dd;
     if(hh < 10)
-      faltam += "0" + hh + ' : ';
-    else faltam += hh + ' : ';
+      h += "0" + hh;
+    else 
+      h += hh;
 
     if(mm < 10)
-      faltam += "0" + mm + ' : ';
+      m += "0" + mm;
     else
-      faltam += mm + ' : ';
+      m += mm;
     
     if(ss < 10)
-      faltam += "0" + ss;
+      s += "0" + ss;
     else
-      faltam += ss;
+      s += ss;
+  
 
   if (dd+hh+mm+ss > 0) {
-    document.getElementById('contador').innerHTML = faltam;
+    document.getElementById('dias').innerHTML = d;
+    document.getElementById('horas').innerHTML = h;
+    document.getElementById('minutos').innerHTML = m;
+    document.getElementById('segundos').innerHTML = s;
     setTimeout(atualizaContador,1000);
-  } else {
+  } 
+    else {
     document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
     setTimeout(atualizaContador,1000);
   }
