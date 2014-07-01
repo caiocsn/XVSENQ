@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- CSS do validador -->
         <link href="validador/css/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
         <link href="validador/css/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
         <link href="validador/css/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
@@ -9,48 +8,38 @@
 
     </head>
 
-    <body>
+    <body id="contato">
+        
+        <div class="title">FALE CONOSCO</div>
+        
         <div class="formulario">  
-            
-            <div class="title"></div>
             
             <form action="envia.php" method="POST"> <!--  chama o envia.php -->        
 
-                <div class="formulario-campo">
-                Nome<br>
+                
                     <span id="sprytextfield1">
-                        <input type="text" name="nomeremetente" class="textfield-nome" placeholder="" size="20%"/>
+                        <input type="text" name="nomeremetente" class="textfield-nome" placeholder="Nome" size="20%"/>
                         <br /><span class="textfieldRequiredMsg">Digite seu nome</span></span>
-                </div>
+            
 
-
-
-                <div class="formulario-campo">
-                    E-mail<br>
                         <span id="sprytextfield2">
-                        <input type="text" name="emailremetente" class="textfield-nome" placeholder="" size="20%"/>
+                        <input type="text" name="emailremetente" class="textfield-nome" placeholder="E-mail" size="20%"/>
                         <br /><span class="textfieldRequiredMsg">Digite seu e-mail</span>
-                        <span class="textfieldInvalidFormatMsg">Formato de e-mail inválido</span></span></div>
+                        <span class="textfieldInvalidFormatMsg">Formato de e-mail inválido</span></span>
 
 
-
-                <div class="formulario-campo">
-                    Assunto<br>
                         <span id="sprytextfield5">
-                        <input type="text" name="assunto" class="textfield-nome" placeholder="" size="20%"/>
-                        <br /><span class="textfieldRequiredMsg">Digite o assunto</span></span></div><br>
+                        <input type="text" name="assunto" class="textfield-nome" placeholder="Assunto" size="20%"/>
+                        <br /><span class="textfieldRequiredMsg">Digite o assunto</span></span><br>
 
 
-                <div class="formulario-texto">Mensagem</div>
-                <div class="formulario-campo"><span id="sprytextarea1">
-                        <textarea name="mensagem" cols="35" rows="6" placeholder=""></textarea>
+                        <span id="sprytextarea1">
+                        <textarea name="mensagem" cols="35" rows="6" placeholder="Mensagem"></textarea>
                         <br /><span class="textareaRequiredMsg">Digite sua mensagem</span></span>
-                </div>
 
-                <div>
-                    <input name="enviar" type="reset" value="Limpar" class="btn-contato-reset"  />
-                    <input name="enviar" type="submit" value="Enviar" class="btn-contato-enviar"  />                
-                </div>
+
+                    <input name="enviar" type="reset" value="LIMPAR" class="btn-contato-reset"  />
+                    <input name="enviar" type="submit" value="ENVIAR" class="btn-contato-enviar"  />                
 
 
             </form> 

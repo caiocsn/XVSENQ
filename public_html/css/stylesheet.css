@@ -27,7 +27,7 @@ cinza		202 207 199		CACFC7
 @font-face
 {
     font-family: digital;
-    src: url(fonts/DS-DIGII.ttf);
+    src: url(fonts/digital-7.ttf);
 }
 
 @font-face
@@ -81,9 +81,9 @@ cinza		202 207 199		CACFC7
 #home .logo {
     top: 3%;
     position: fixed;
-    left: 35%;
-    height: 60%;
-    width: 30%;
+    left: 30%;
+    height: 65%;
+    width: 40%;
 }
 
 #home .facebook, #home .gplus{
@@ -161,7 +161,6 @@ cinza		202 207 199		CACFC7
     font-size: 120%;
     opacity: 0.6;
     z-index: 1;
-    border-bottom-style: solid;
 }
 
 /* Estilo da lista com os links no menu */
@@ -208,7 +207,7 @@ cinza		202 207 199		CACFC7
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('../images/backgrand.jpg');
+    
     background-size: 100% 100%;
 }
 
@@ -228,20 +227,6 @@ cinza		202 207 199		CACFC7
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    opacity: 0.7;
-}
-
-.content-box #left-box{
-    position: absolute;
-    width: 40%;
-    height: 100%;
-}
-
-.content-box #right-box{
-    position: absolute;
-    left: 40%;
-    width: 60%;
-    height: 100%;
 }
 
 .content-box .title{
@@ -280,21 +265,27 @@ cinza		202 207 199		CACFC7
 }
 /* Estilo do formulario de contato */
 
+#contato{
+    background-color: #E6ECEC;
+}
+
+#contato .title{
+    font-family: kgempireofdirt;
+    font-size: 160%;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    background-color: #2F2D76;
+    color: white;
+}
 .formulario{
     font-family: contm;
     position: relative;
     height: auto;
-    left: 10%;
-    top: 10%;
     width: 80%;
+    left: 11%;
+    padding-top: 2%;
     text-align: center;
-}
-
-.btn-contato-enviar, .btn-contato-reset{
-    min-width: 15%;
-    padding: 3%;
-    font-family: contm;
-    font-size: 100%;
 }
 
 .btn-contato-enviar:hover, .btn-contato-reset:hover{
@@ -303,12 +294,34 @@ cinza		202 207 199		CACFC7
     cursor: pointer;
 }
 
-.formulario textarea, .formulario input{
+.formulario textarea, .formulario .textfield-nome{
     position: relative;
     max-width: 90%;
-    border: none;
+    border-style: solid;
+    border-radius: 4%;
+    border-width: 1px;
+    border-color: #2F2D76;
+    background-color: gray;
+    color: #66B645;
+    padding: 2%;
 }
 
+.btn-contato-enviar, .btn-contato-reset{
+    min-width: 15%;
+    padding: 2%;
+    font-family: kgempireofdirt;
+    font-size: 120%;
+    color: #CCC;
+    border-style: solid;
+    border-radius: 4%;
+    border-width: 1px;
+    border-color: #2F2D76;
+    background-color: gray;
+}
+
+.formulario textarea:hover, .formulario input:hover{
+    border-style: dotted;
+}
 /** Adequação de estilo para resoluções menores **/
 
 /* Telas com até 768 px de largura */
@@ -322,7 +335,7 @@ cinza		202 207 199		CACFC7
 }
 
 /* Telas com até 320 px de largura */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) and (max-height: 480px){
 /* Estilo do menu*/
 #menu{
     font-size: 50%;
@@ -339,5 +352,13 @@ cinza		202 207 199		CACFC7
     position: absolute;
     width: 80%;
 }
+
+#home .logo {
+    top: 35%;
+    position: fixed;
+    left: 25%;
+    height: 30%;
+    width: 50%;
 }
 
+}

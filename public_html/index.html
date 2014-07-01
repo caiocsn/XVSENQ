@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="js/contador.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
-<body onload="atualizaContador()">
-	
-	<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="js/contador.js"></script>
+    
+    <head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Free Web tutorials">
-		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-		<meta name="author" content="Hege Refsnes">
-	</head>
-	       
-        <a href=""><img src="images/logoredonda.png" class="logo-senq"></img></a>
-                
-        <div id="menu">         
-                
-        <ul>
-		<li><a class="nav" onclick="changeContent('pages/about.html')">O EVENTO</a></li> 
-		<li><a class="nav" onclick="changeContent('banner2.png')">PROGRAMACAO</a></li>
-		<li><a class="nav" onclick="changeContent('area-do-congressista.html')">INSCRICOES</a></li>
-                <li><a class="nav" onclick="changeContent('pages/contato.html')">PARCEIROS</a></li>
-                <li><a class="nav" onclick="changeContent('pages/fale-conosco.html')">CONTATO</a></li>
-	</ul>
-	
+		<meta name="description" content="XV Semana de Engenharia Quimica">
+		<meta name="keywords" content="Senq, Engenharia, Quimica, UFAL, XV">
+		<meta name="icone" content="Empresa Junior de Computacao Ufal">
+    </head>
+        
+    <body onload="atualizaContador()">
+        <div id="home">
+            
+            <div class="text">FALTAM APENAS</div>
+            
+            <div id="contador">
+                <table>
+                    <tr class="digits">
+                      <td id="dias"></td>
+                      <td id="horas"></td>		
+                      <td id="minutos"></td>
+                      <td id="segundos"></td>
+                    </tr>
+                    <tr class="label">
+                      <td>DIAS</td>
+                      <td>HORAS</td>		
+                      <td>MIN</td>
+                      <td>SEG</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="title"></div>
+            
+            <img src="images/icon.png" class="logo-icone"></img>
+            
+            <a href="index.html"><img src="images/senq_branco.png" class="logo"></img></a>
+            
+            <a href="https://www.facebook.com/pages/XV-SENQ-UFAL/220848148114065?ref=br_tf" target="_blank">
+                <img src="images/facebook_circulo.png" class="facebook"></img>
+            </a>
+            <a href="#">
+                <img src="images/gmail_circulo.png" class="gplus"></img>
+            </a>
+            
         </div>
-	
-        <div class="content">
-            <iframe src="pages/about.html" id="content-frame"></iframe>            
-        </div>
-
-</body></html>
+    </body>
+</html>
